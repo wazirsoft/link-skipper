@@ -33,6 +33,7 @@
 				break;
 			// adf.ly source by http://skizzerz.net/scripts/adfly.php
 			case 'adf.ly':
+			case 'j.gs':
 				$data = $aa->WEBParsing($url);
 				if ( preg_match( "#var ysmm = '([a-zA-Z0-9+/=]+)'#", $data, $matches ) )
 					$data = $final = $url = $aa->decode_adfly( $matches[1] );
